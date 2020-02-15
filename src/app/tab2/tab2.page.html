@@ -1,0 +1,28 @@
+
+
+
+<!-- class="background" -->
+<ion-content>
+
+  <ion-card>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Your Message</ion-label>
+        <ion-input [(ngModel)] = "post.text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Toe</ion-label>
+        <ion-select [(ngModel)] = "post.to">
+          <ion-select-option value ="Everyone">Everyone</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-button (click)="sendMessage()" expand="block" color="primary">Submit Post</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
